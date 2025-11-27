@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/login.css" />
+    <script src="/js/login.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        style="
+          display: flex;
+          justify-content: right;
+          background-color: lightblue;
+          padding: 10px;
+        "
+      >
+        Login
+      </nav>
+    </header>
+    <main>
+      <div class="main">
+        <h1 style="text-align: center">FORM</h1>
+        <form class="main-hero">
+          <label for="username">Username</label>
+          <div
+            style="
+              display: flex;
+              align-content: center;
+              align-items: center;
+              justify-content: space-between;
+              background-color: white;
+              border: 2px solid black;
+              width: 100%;
+            "
+          >
+            <input
+              style="outline: none; border: 0; width: 100%; padding: 10px"
+              type="text"
+              name="username"
+            />
+          </div>
+          <span id="uservalid" class="span-style"></span>
+          <label for="Password">Password</label>
+          <div
+            style="
+              display: flex;
+              align-content: center;
+              align-items: center;
+              justify-content: space-between;
+              background-color: white;
+              border: 2px solid black;
+              width: 100%;
+            "
+          >
+            <input
+              style="outline: none; border: 0; width: 100%; padding: 10px"
+              type="password"
+              name="password"
+            />
+
+            <img
+              id="eyeClick"
+              src="/icons/eye.png"
+              width="20vh"
+              height="20vh"
+              style="margin-right: 10px; background-color: white"
+            />
+          </div>
+          <span id="pwdvalid" class="span-style"
+            >Silahkan input password!!</span
+          >
+
+          <button id="btnLogin" type="submit">LOGIN</button>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
