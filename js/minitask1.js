@@ -14,24 +14,16 @@ eyeClicked.addEventListener("click", function () {
 });
 
 function onClick() {
-  const hamburger = document.querySelector(".ham-btn");
-  const nav = document.querySelector(".nav-hero");
+  const hamburger = document.querySelector(".hamb-btn");
+  const heroFlat = document.querySelector(".hero-ul");
 
-  const getAtr = window.getComputedStyle(nav);
-  console.log(window.innerWidth, "aaaaaadda");
+  const getAtr = window.getComputedStyle(heroFlat);
 
   hamburger.addEventListener("click", function () {
     getAtr.display == "none"
-      ? nav.setAttribute("style", "display:flex")
-      : nav.setAttribute("style", "display:none");
-
-    //console.log(getAtr.display);
-
-    // window.innerWidth < 768
-    //   ? nav.setAttribute("style", "display:none")
-    //   : nav.setAttribute("style", "display:flex");
+      ? heroFlat.setAttribute("style", "display:flex")
+      : heroFlat.setAttribute("style", "display:none");
   });
 }
 
 onClick();
-//document.addEventListener("DOMContentLoaded", onclick);
