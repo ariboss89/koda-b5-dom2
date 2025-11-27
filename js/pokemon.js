@@ -177,3 +177,12 @@ Promise.all(arrUrl.map((url) => fetch(url).then((response) => response.json())))
 
 //console.log(pwd.value, "apaa");
 //});
+
+const btnLogout = document.querySelector("#navLogout");
+btnLogout.addEventListener("click", () => {
+  localStorage.removeItem("user");
+  localStorage.removeItem("pasw");
+  location.replace("/views/login.html");
+});
+
+console.log(btnLogout, "aaa");
