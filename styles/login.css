@@ -1,0 +1,35 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.main {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-content: center;
+}
+
+.main-hero {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: left;
+  gap: 20px;
+}
+
+.span-style {
+  display: none;
+  color: red;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
