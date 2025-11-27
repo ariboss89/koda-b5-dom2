@@ -10,17 +10,37 @@
   </head>
   <body>
     <header>
+      <div class="hero-info">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+          "
+        >
+          Ari Ramadhan
+        </div>
+        <div class="ham-btn">
+          <img
+            src="https://www.svgrepo.com/show/506800/burger-menu.svg"
+            width="30vh"
+            height="30vh"
+          />
+        </div>
+      </div>
+      <!-- <hr style="margin: 0" /> -->
       <nav class="nav-hero">
         <ul class="hero-ul">
-          <li>Ari Ramadhan</li>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
+          <li class="no-bullet-item">Home</li>
+          <li class="no-bullet-item">About</li>
+          <li class="no-bullet-item">Login</li>
         </ul>
       </nav>
     </header>
-    <main>
-      <form>
+    <main style="padding: 50px">
+      <!-- <form>
         <div style="display: flex; justify-content: center; margin-top: 30px">
           <input
             autofocus
@@ -28,6 +48,35 @@
             type="password"
             id="pwd"
             placeholder="Insert Password"
+          />
+        </div>
+      </form> -->
+
+      <form class="main-hero">
+        <label for="Password">Password</label>
+        <div
+          style="
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            border: 2px solid black;
+            width: 100%;
+          "
+        >
+          <input
+            style="outline: none; border: 0; width: 100%; padding: 10px"
+            type="password"
+            name="password"
+          />
+
+          <img
+            id="eyeClick"
+            src="/icons/eye.png"
+            width="20vh"
+            height="20vh"
+            style="margin-right: 10px; background-color: white"
           />
         </div>
       </form>
